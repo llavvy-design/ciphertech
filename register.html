@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Register your interest in a fictional CipherTech technology learning program."
+    />
+
+    <meta name="theme-color" content="#F5EEE1" />
+
+    <title>Join the Hub | CipherTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/css/register.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="CipherTech home">
+          <span class="brand-mark" aria-hidden="true">C</span>
+
+          <span class="brand-name">
+            <strong>CipherTech</strong>
+            <small>THE CREATIVE TECH HUB</small>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="programs.html">Programs</a>
+          <a
+            class="nav-link nav-cta active"
+            href="register.html"
+            aria-current="page"
+            >Register ↗</a
+          >
+        </nav>
+
+        <!-- Mobile-friendly navigation without JavaScript -->
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation menu">
+            <span>MENU</span>
+            <span class="menu-symbol" aria-hidden="true">☰</span>
+          </summary>
+
+          <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="register.html" aria-current="page">Register</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- PAGE INTRODUCTION -->
+      <section class="register-hero">
+        <div class="register-hero-inner">
+          <div class="register-hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              YOUR NEXT CHAPTER STARTS HERE
+            </p>
+
+            <h1>
+              Your ideas<br />
+              belong <span>here.</span>
+            </h1>
+
+            <p class="hero-description">
+              Every expert was once a beginner with questions. Tell us what
+              you're curious about and start imagining what you could build.
+            </p>
+
+            <a href="#registration-form" class="button button-primary">
+              Let's get started <span>↓</span>
+            </a>
+
+            <div class="hero-note">
+              <span class="note-symbol" aria-hidden="true">✳</span>
+              <p>
+                <strong>No need to have it all figured out.</strong>
+                <br />
+                Curiosity is a perfectly good starting point.
+              </p>
+            </div>
+          </div>
+
+          <!-- Decorative registration illustration -->
+          <div
+            class="register-art"
+            aria-label="Decorative illustration about starting a learning journey"
+          >
+            <div class="art-top-label">
+              <span>FIELD NOTES / 001</span>
+              <span>CT ✳</span>
+            </div>
+
+            <div class="art-paper paper-back"></div>
+
+            <div class="art-paper paper-front">
+              <p class="paper-eyebrow">A NOTE TO YOUR FUTURE SELF</p>
+
+              <h2>
+                Dear<br />
+                future<br />
+                <span>you,</span>
+              </h2>
+
+              <div class="paper-line"></div>
+              <div class="paper-line paper-line-short"></div>
+
+              <p class="paper-message">
+                Keep asking.<br />
+                Keep making.<br />
+                Keep going.
+              </p>
+
+              <span class="paper-stamp" aria-hidden="true"
+                >START<br />HERE ↗</span
+              >
+            </div>
+
+            <div class="art-spark spark-one" aria-hidden="true">✳</div>
+            <div class="art-spark spark-two" aria-hidden="true">✴</div>
+
+            <div class="art-footer-label">
+              <span>YOUR JOURNEY</span>
+              <span>BEGINS WITH ONE STEP.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-ribbon">
+          <span>BE CURIOUS</span>
+          <span aria-hidden="true">✳</span>
+          <span>LEARN SOMETHING</span>
+          <span aria-hidden="true">✳</span>
+          <span>MAKE IT YOURS</span>
+        </div>
+      </section>
+
+      <!-- REGISTRATION INTRODUCTION -->
+      <section class="section form-intro">
+        <div>
+          <p class="eyebrow">01 / A LITTLE ABOUT YOU</p>
+
+          <h2>
+            Let's make<br />
+            an introduction.
+          </h2>
+        </div>
+
+        <div class="form-intro-copy">
+          <p>
+            Fill in the form to tell us about yourself, the subjects you're
+            interested in and how you'd like to learn.
+          </p>
+
+          <p class="required-note">
+            Fields marked with <span aria-hidden="true">*</span>
+            are required.
+          </p>
+        </div>
+      </section>
+
+      <!-- REGISTRATION CONTENT: FORM + SIDEBAR -->
+      <section class="registration-section" id="registration-form">
+        <div class="registration-layout">
+          <!-- REGISTRATION FORM -->
+          <div class="form-panel">
+            <div class="form-panel-heading">
+              <div>
+                <p class="eyebrow">CIPHERTECH / INTAKE FORM</p>
+                <h2>Tell us your story.</h2>
+              </div>
+
+              <span class="form-index">FORM 001</span>
+            </div>
+
+            <!--
+                        This is a front-end practice form.
+                        Native browser validation is enabled.
+                        A backend is needed to save registrations.
+                    -->
+            <form
+              class="registration-form"
+              action="#registration-form"
+              method="get"
+            >
+              <!-- FIELDSET 1: PERSONAL DETAILS -->
+              <fieldset class="form-fieldset">
+                <legend>
+                  <span class="legend-number">01</span>
+                  The basics
+                </legend>
+
+                <p class="fieldset-description">
+                  First things first — who are we meeting?
+                </p>
+
+                <div class="field-grid">
+                  <div class="form-field">
+                    <label for="full-name">
+                      Full name <span class="required-star">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="full_name"
+                      placeholder="e.g. Lavine Lornah"
+                      autocomplete="name"
+                      minlength="2"
+                      maxlength="80"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="email">
+                      Email address <span class="required-star">*</span>
+                    </label>
+
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="phone">
+                      Phone number <span class="required-star">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+254 700 000 000"
+                      autocomplete="tel"
+                      minlength="7"
+                      maxlength="20"
+                      required
+                    />
+
+                    <small> Include your country code if possible. </small>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="age">
+                      Age <span class="required-star">*</span>
+                    </label>
+
+                    <input
+                      type="number"
+                      id="age"
+                      name="age"
+                      min="13"
+                      max="100"
+                      step="1"
+                      placeholder="Your age"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- FIELDSET 2: EDUCATION AND EXPERIENCE -->
+              <fieldset class="form-fieldset">
+                <legend>
+                  <span class="legend-number">02</span>
+                  Your learning background
+                </legend>
+
+                <p class="fieldset-description">
+                  Everyone arrives with a different story.
+                </p>
+
+                <div class="field-grid">
+                  <div class="form-field">
+                    <label for="education">
+                      Current education level
+                      <span class="required-star">*</span>
+                    </label>
+
+                    <select id="education" name="education" required>
+                      <option value="" selected disabled>
+                        Choose your level
+                      </option>
+
+                      <option value="secondary">Secondary school</option>
+
+                      <option value="certificate">Certificate</option>
+
+                      <option value="diploma">Diploma</option>
+
+                      <option value="undergraduate">
+                        Undergraduate student
+                      </option>
+
+                      <option value="graduate">Graduate</option>
+
+                      <option value="self-taught">Self-taught learner</option>
+
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="institution">
+                      School, university or institution
+                    </label>
+
+                    <input
+                      type="text"
+                      id="institution"
+                      name="institution"
+                      placeholder="Optional"
+                      autocomplete="organization"
+                      maxlength="120"
+                    />
+                  </div>
+
+                  <div class="form-field field-full">
+                    <label for="portfolio">
+                      Portfolio, GitHub or personal website
+                    </label>
+
+                    <input
+                      type="url"
+                      id="portfolio"
+                      name="portfolio"
+                      placeholder="https://example.com"
+                      autocomplete="url"
+                    />
+
+                    <small>
+                      Optional. Add a link if you already have one.
+                    </small>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- FIELDSET 3: PROGRAM SELECTION -->
+              <fieldset class="form-fieldset">
+                <legend>
+                  <span class="legend-number">03</span>
+                  Choose your path
+                </legend>
+
+                <p class="fieldset-description">
+                  What would you most like to explore?
+                </p>
+
+                <div class="form-field">
+                  <label for="program">
+                    Preferred learning program
+                    <span class="required-star">*</span>
+                  </label>
+
+                  <select id="program" name="program" required>
+                    <option value="" selected disabled>Pick a program</option>
+
+                    <option value="web-development">Web Development</option>
+
+                    <option value="python-data-science">
+                      Python & Data Science
+                    </option>
+
+                    <option value="cybersecurity">
+                      Cybersecurity & Networks
+                    </option>
+
+                    <option value="ai-machine-learning">
+                      AI & Machine Learning
+                    </option>
+
+                    <option value="cloud-devops">
+                      Cloud Computing & DevOps
+                    </option>
+
+                    <option value="ui-ux">UI/UX & Creative Technology</option>
+                  </select>
+                </div>
+
+                <div class="field-grid field-grid-spaced">
+                  <div class="form-field">
+                    <label for="start-date"> Preferred start date </label>
+
+                    <input
+                      type="date"
+                      id="start-date"
+                      name="preferred_start_date"
+                    />
+
+                    <small>
+                      Optional; dates are for this fictional demo.
+                    </small>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="weekly-hours">
+                      Hours available per week
+                      <span class="required-star">*</span>
+                    </label>
+
+                    <input
+                      type="number"
+                      id="weekly-hours"
+                      name="weekly_hours"
+                      min="1"
+                      max="60"
+                      step="1"
+                      placeholder="e.g. 5"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- FIELDSET 4: LEARNING PREFERENCES -->
+              <fieldset class="form-fieldset">
+                <legend>
+                  <span class="legend-number">04</span>
+                  How do you like to learn?
+                </legend>
+
+                <p class="fieldset-description">
+                  Choose the learning format that suits you best.
+                </p>
+
+                <div class="choice-grid">
+                  <label class="choice-card" for="format-online">
+                    <input
+                      type="radio"
+                      id="format-online"
+                      name="learning_format"
+                      value="online"
+                      required
+                    />
+
+                    <span class="choice-content">
+                      <strong>Online</strong>
+                      <small>Learn from wherever you are.</small>
+                    </span>
+                  </label>
+
+                  <label class="choice-card" for="format-in-person">
+                    <input
+                      type="radio"
+                      id="format-in-person"
+                      name="learning_format"
+                      value="in-person"
+                    />
+
+                    <span class="choice-content">
+                      <strong>In person</strong>
+                      <small>Learn and collaborate on site.</small>
+                    </span>
+                  </label>
+
+                  <label class="choice-card" for="format-hybrid">
+                    <input
+                      type="radio"
+                      id="format-hybrid"
+                      name="learning_format"
+                      value="hybrid"
+                    />
+
+                    <span class="choice-content">
+                      <strong>Hybrid</strong>
+                      <small>A mix of online and in-person.</small>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- FIELDSET 5: INTERESTS, MESSAGE AND CONSENT -->
+              <fieldset class="form-fieldset">
+                <legend>
+                  <span class="legend-number">05</span>
+                  The extra details
+                </legend>
+
+                <p class="fieldset-description">
+                  Tell us what sparks your curiosity.
+                </p>
+
+                <div class="form-field">
+                  <span class="field-label"> Which areas interest you? </span>
+
+                  <div class="checkbox-grid">
+                    <label class="checkbox-option" for="interest-design">
+                      <input
+                        type="checkbox"
+                        id="interest-design"
+                        name="interests"
+                        value="design"
+                      />
+
+                      <span>Design & creativity</span>
+                    </label>
+
+                    <label class="checkbox-option" for="interest-coding">
+                      <input
+                        type="checkbox"
+                        id="interest-coding"
+                        name="interests"
+                        value="coding"
+                      />
+
+                      <span>Software development</span>
+                    </label>
+
+                    <label class="checkbox-option" for="interest-data">
+                      <input
+                        type="checkbox"
+                        id="interest-data"
+                        name="interests"
+                        value="data"
+                      />
+
+                      <span>Data & artificial intelligence</span>
+                    </label>
+
+                    <label class="checkbox-option" for="interest-security">
+                      <input
+                        type="checkbox"
+                        id="interest-security"
+                        name="interests"
+                        value="cybersecurity"
+                      />
+
+                      <span>Cybersecurity & networks</span>
+                    </label>
+
+                    <label class="checkbox-option" for="interest-cloud">
+                      <input
+                        type="checkbox"
+                        id="interest-cloud"
+                        name="interests"
+                        value="cloud"
+                      />
+
+                      <span>Cloud & infrastructure</span>
+                    </label>
+
+                    <label class="checkbox-option" for="interest-projects">
+                      <input
+                        type="checkbox"
+                        id="interest-projects"
+                        name="interests"
+                        value="projects"
+                      />
+
+                      <span>Building personal projects</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-field message-field">
+                  <label for="message">
+                    Anything else you'd like us to know?
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    maxlength="1000"
+                    placeholder="Tell us what you hope to learn, a problem you'd love to solve or a project you have in mind..."
+                  ></textarea>
+
+                  <small>Optional · Maximum 1,000 characters.</small>
+                </div>
+
+                <div class="consent-box">
+                  <label for="confirm-details" class="consent-label">
+                    <input
+                      type="checkbox"
+                      id="confirm-details"
+                      name="confirm_details"
+                      value="yes"
+                      required
+                    />
+
+                    <span>
+                      I confirm that the information I entered is accurate to
+                      the best of my knowledge.
+                      <span class="required-star">*</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- SUBMISSION AREA -->
+              <div class="form-submit-area">
+                <p class="form-privacy-note">
+                  <span aria-hidden="true">✳</span>
+                  This is a student demonstration form. It does not store your
+                  information in a database.
+                </p>
+
+                <button class="button button-submit" type="submit">
+                  Submit registration <span>↗</span>
+                </button>
+
+                <p class="form-footnote">
+                  Please use fictional details while testing this demo.
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <!-- HELPFUL SIDEBAR -->
+          <aside class="registration-sidebar">
+            <div class="sidebar-note">
+              <span class="sidebar-number">A LITTLE REMINDER / 01</span>
+
+              <div class="sidebar-icon" aria-hidden="true">✳</div>
+
+              <h2>New to tech?</h2>
+
+              <p>
+                You're in the right place. You do not need a perfect portfolio
+                or years of experience to begin exploring.
+              </p>
+
+              <a href="programs.html" class="sidebar-link">
+                Explore the programs <span>↗</span>
+              </a>
+            </div>
+
+            <div class="sidebar-info">
+              <p class="eyebrow">BEFORE YOU BEGIN</p>
+
+              <h3>Three little tips.</h3>
+
+              <div class="tip-item">
+                <span class="tip-number">01</span>
+                <div>
+                  <strong>Be yourself.</strong>
+                  <p>
+                    Use the information requested by each field. You can leave
+                    optional fields blank.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tip-item">
+                <span class="tip-number">02</span>
+                <div>
+                  <strong>Follow your curiosity.</strong>
+                  <p>
+                    Choose the program that interests you most. You can explore
+                    other areas later.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tip-item">
+                <span class="tip-number">03</span>
+                <div>
+                  <strong>Start where you are.</strong>
+                  <p>
+                    Beginner pathways are designed to introduce core concepts
+                    step by step.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-contact">
+              <!-- Clickable arrow: opens an email to CipherTech -->
+              <div class="contact-decoration">
+                <a
+                  href="mailto:hello@ciphertech.example?subject=CipherTech%20Question"
+                  aria-label="Email CipherTech with a question"
+                  title="Send CipherTech a question"
+                >
+                  ↗
+                </a>
+              </div>
+
+              <p class="sidebar-small-label">NEED A LITTLE HELP?</p>
+
+              <h3>Questions are welcome.</h3>
+
+              <p>
+                Explore the other pages or use the fictional contact address
+                below for the assignment.
+              </p>
+
+              <a href="mailto:hello@ciphertech.example">
+                hello@ciphertech.example
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION -->
+      <section class="final-cta">
+        <div class="final-cta-inner">
+          <div class="cta-flower" aria-hidden="true">✳</div>
+
+          <p class="eyebrow">YOU MADE IT HERE</p>
+
+          <h2>
+            Every great idea<br />
+            begins <span>somewhere.</span>
+          </h2>
+
+          <p>
+            Keep exploring, keep practising and give yourself permission to be a
+            beginner.
+          </p>
+
+          <a href="programs.html" class="button button-primary">
+            Find your next challenge <span>↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand footer-logo" href="index.html">
+            <span class="brand-mark" aria-hidden="true">C</span>
+
+            <span class="brand-name">
+              <strong>CipherTech</strong>
+              <small>THE CREATIVE TECH HUB</small>
+            </span>
+          </a>
+
+          <p>
+            A fictional home for big questions, brave experiments and curious
+            minds.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="register.html">Registration</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Say hello</h3>
+          <a href="mailto:hello@ciphertech.example">
+            hello@ciphertech.example
+          </a>
+          <p>Creative minds, everywhere.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 CipherTech. Created for learning.</p>
+        <p>MADE WITH UNENDING CURIOSITY <span aria-hidden="true">✳</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
