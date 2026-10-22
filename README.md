@@ -1,6 +1,6 @@
 # ✳ CipherTech — The Creative Tech Hub
 
-**A creative, responsive, multi-page technology hub website built with HTML5 and CSS3 as a weekend learning assignment for eMobinis Institute.**
+**A creative, responsive, multi-page technology hub website built with HTML5 and CSS3 as a weekend learning assignment for eMobilis Institute.**
 
 > **Project status: Learning project / Frontend demonstration**
 >
@@ -265,4 +265,4 @@ CipherTech is a small learning project built to explore the foundations of web d
 
 It is not intended to be a finished commercial product. It represents a step in the learning process: taking what has been taught, applying it in a practical project and discovering what can be improved next.
 
-**Learn by doing. Stay curious. Keep building.** ✳
+**Don't forget to Learn by doing and Keep building.** ✳
